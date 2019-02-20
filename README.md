@@ -6,7 +6,7 @@
 
 This project is [Text Recognition using Firebase built-in model](https://firebase.google.com/docs/ml-kit/recognize-text) on iOS.<br>If you are interested in iOS + Machine Learning, visit [here](https://github.com/motlabs/iOS-Proejcts-with-ML-Models) you can see various DEMOs.<br>
 
-![TextRecognition-MLKit_DEMO001](resource/TextRecognition-MLKit_DEMO001.gif)
+![TextRecognition-MLKit_DEMO002](resource/TextRecognition-MLKit_DEMO002.gif)
 
 ## Requirements
 
