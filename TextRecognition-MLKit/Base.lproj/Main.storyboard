@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextRecognition_MLKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-f2-lh4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="500"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.63529411759999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GP9-f2-lh4" secondAttribute="height" multiplier="3:4" id="Ksm-xx-TW6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2t-dX-9pt" customClass="DrawingView" customModule="TextRecognition_MLKit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="500"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfD-EX-Mjc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="fps: xx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vxv-7j-234">
+                                        <rect key="frame" x="251.5" y="13" width="107.5" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="9DG-kt-th1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="9"/>
+                                        <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inference: xxx mm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1G2-Ms-fgH">
+                                        <rect key="frame" x="16" y="13" width="107.5" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="070-ze-RNN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="9"/>
+                                        <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Execution: xxx mm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eZ2-j2-9TG">
+                                        <rect key="frame" x="133.5" y="13" width="108" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="yWy-VX-1f5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="9"/>
+                                        <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.80182470029999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="02H-f5-kFK"/>
+                                    <constraint firstItem="vxv-7j-234" firstAttribute="leading" secondItem="eZ2-j2-9TG" secondAttribute="trailing" constant="10" id="34V-sM-VDG"/>
+                                    <constraint firstItem="vxv-7j-234" firstAttribute="centerY" secondItem="VfD-EX-Mjc" secondAttribute="centerY" id="K5K-J3-7AN"/>
+                                    <constraint firstItem="eZ2-j2-9TG" firstAttribute="baseline" secondItem="1G2-Ms-fgH" secondAttribute="baseline" id="KCW-DN-GG2"/>
+                                    <constraint firstItem="eZ2-j2-9TG" firstAttribute="width" secondItem="1G2-Ms-fgH" secondAttribute="width" id="Pnm-mH-tmR"/>
+                                    <constraint firstItem="1G2-Ms-fgH" firstAttribute="centerY" secondItem="VfD-EX-Mjc" secondAttribute="centerY" id="Ppf-Yj-vQP"/>
+                                    <constraint firstItem="1G2-Ms-fgH" firstAttribute="leading" secondItem="VfD-EX-Mjc" secondAttribute="leading" constant="16" id="TEY-8e-4y9"/>
+                                    <constraint firstAttribute="trailing" secondItem="vxv-7j-234" secondAttribute="trailing" constant="16" id="YXP-VL-bxB"/>
+                                    <constraint firstItem="eZ2-j2-9TG" firstAttribute="leading" secondItem="1G2-Ms-fgH" secondAttribute="trailing" constant="10" id="ZNH-G4-BnV"/>
+                                    <constraint firstItem="vxv-7j-234" firstAttribute="width" secondItem="1G2-Ms-fgH" secondAttribute="width" id="m0b-xW-ogm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXn-hI-f4E">
+                                <rect key="frame" x="87.5" y="572" width="200" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="rs7-Vo-Y2V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S2t-dX-9pt" firstAttribute="width" secondItem="GP9-f2-lh4" secondAttribute="width" id="1ED-E8-Ynf"/>
+                            <constraint firstItem="GP9-f2-lh4" firstAttribute="top" secondItem="VfD-EX-Mjc" secondAttribute="bottom" id="56W-bo-afT"/>
+                            <constraint firstItem="S2t-dX-9pt" firstAttribute="top" secondItem="GP9-f2-lh4" secondAttribute="top" id="6Ek-aQ-2o8"/>
+                            <constraint firstItem="GP9-f2-lh4" firstAttribute="width" secondItem="GP9-f2-lh4" secondAttribute="height" multiplier="3:4" id="9HN-lH-aVI"/>
+                            <constraint firstItem="VfD-EX-Mjc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="J4r-E9-YnE"/>
+                            <constraint firstItem="VfD-EX-Mjc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O0r-tC-Tg4"/>
+                            <constraint firstItem="GP9-f2-lh4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WrY-Xm-UYh"/>
+                            <constraint firstItem="S2t-dX-9pt" firstAttribute="leading" secondItem="GP9-f2-lh4" secondAttribute="leading" id="YMq-fM-Xz3"/>
+                            <constraint firstItem="S2t-dX-9pt" firstAttribute="height" secondItem="GP9-f2-lh4" secondAttribute="height" id="dCZ-cL-0Dg"/>
+                            <constraint firstItem="dXn-hI-f4E" firstAttribute="top" secondItem="GP9-f2-lh4" secondAttribute="bottom" constant="8" id="dpm-hY-uCW"/>
+                            <constraint firstItem="GP9-f2-lh4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fPk-9Q-i6O"/>
+                            <constraint firstItem="GP9-f2-lh4" firstAttribute="top" secondItem="VfD-EX-Mjc" secondAttribute="bottom" id="kwg-Sd-80O"/>
+                            <constraint firstItem="dXn-hI-f4E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sWp-32-Mue"/>
+                            <constraint firstItem="VfD-EX-Mjc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wqr-Du-JG1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="drawingView" destination="S2t-dX-9pt" id="SG7-MQ-PpD"/>
+                        <outlet property="etimeLabel" destination="eZ2-j2-9TG" id="2qd-N7-9gt"/>
+                        <outlet property="fpsLabel" destination="vxv-7j-234" id="BH9-du-CDX"/>
+                        <outlet property="inferenceLabel" destination="1G2-Ms-fgH" id="hZ4-r1-FlY"/>
+                        <outlet property="logLabel" destination="dXn-hI-f4E" id="yzk-1b-Xgk"/>
+                        <outlet property="videoPreview" destination="GP9-f2-lh4" id="s0O-jR-wgu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
