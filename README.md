@@ -22,6 +22,12 @@ This project is [Text Recognition using Firebase built-in model](https://firebas
 | -------- | -------------- |
 | iPhone X | 35~200 ms      |
 
+#### Inference time in various cases - iPhone X
+
+![TextRecognitionDEMOs](resource/TextRecognitionDEMOs.jpg)
+
+> More appear words in a picture, more need inference time.
+
 ## Build & Run
 
 ### 1. Prerequisites
