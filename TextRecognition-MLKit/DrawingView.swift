@@ -17,6 +17,11 @@ class DrawingView: UIView {
             setNeedsDisplay()
         }
     }
+    private var blockColor: CGColor = UIColor(red: 0.0, green: 0.4, blue: 0.3, alpha: 0.12).cgColor
+    private var lineColor: CGColor = UIColor(red: 0.7, green: 0.0, blue: 0.3, alpha: 0.18).cgColor
+    private var elementColor: CGColor = UIColor(red: 0.3, green: 0.0, blue: 0.9, alpha: 0.23).cgColor
+    private var textColor: UIColor = UIColor.green
+    private var textSize: CGFloat = 8
     
     override func draw(_ rect: CGRect) {
         guard let ctx = UIGraphicsGetCurrentContext() else { return }
@@ -28,31 +33,28 @@ class DrawingView: UIView {
         
         let blocks: [VisionTextBlock] = visionText.blocks
         print(blocks.count)
-        let font = UIFont.systemFont(ofSize: 10)
+        let font = UIFont.systemFont(ofSize: textSize)
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
         let attributes = [
             NSAttributedString.Key.paragraphStyle: paragraphStyle,
             NSAttributedString.Key.font: font,
-            NSAttributedString.Key.foregroundColor: UIColor.green
+            NSAttributedString.Key.foregroundColor: textColor
         ]
         
         for block in blocks {
             
-            drawRect(ctx: ctx, rect: block.frame * (frameSize / imageSize),
-                     color: UIColor(red: 0.0, green: 0.4, blue: 0.3, alpha: 0.12).cgColor)
+            drawRect(ctx: ctx, rect: block.frame * (frameSize / imageSize), color: blockColor)
             
             let lines: [VisionTextLine] = block.lines
             for line in lines {
                 
-                drawRect(ctx: ctx, rect: line.frame * (frameSize / imageSize),
-                         color: UIColor(red: 0.7, green: 0.0, blue: 0.3, alpha: 0.18).cgColor)
+                drawRect(ctx: ctx, rect: line.frame * (frameSize / imageSize), color: lineColor)
                 
                 let elements: [VisionTextElement] = line.elements
                 for element in elements {
                     
-                    drawRect(ctx: ctx, rect: element.frame * (frameSize / imageSize),
-                             color: UIColor(red: 0.3, green: 0.0, blue: 0.9, alpha: 0.23).cgColor)
+                    drawRect(ctx: ctx, rect: element.frame * (frameSize / imageSize), color: elementColor)
                     
                     let text = element.text
                     text.draw(at: element.frame.origin * (frameSize / imageSize), withAttributes: attributes)

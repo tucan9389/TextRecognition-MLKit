@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55042E9D221DC83C00E8381A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55042E9C221DC83C00E8381A /* AppDelegate.swift */; };
-		55042E9F221DC83C00E8381A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55042E9E221DC83C00E8381A /* ViewController.swift */; };
+		55042E9F221DC83C00E8381A /* MainVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55042E9E221DC83C00E8381A /* MainVideoViewController.swift */; };
 		55042EA2221DC83C00E8381A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55042EA0221DC83C00E8381A /* Main.storyboard */; };
 		55042EA4221DC83D00E8381A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55042EA3221DC83D00E8381A /* Assets.xcassets */; };
 		55042EA7221DC83D00E8381A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55042EA5221DC83D00E8381A /* LaunchScreen.storyboard */; };
@@ -18,6 +18,8 @@
 		55042EC2221DCA4600E8381A /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55042EBF221DCA4600E8381A /* VideoCapture.swift */; };
 		55042EC3221DCA4600E8381A /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55042EC0221DCA4600E8381A /* DrawingView.swift */; };
 		5862A6398B3B660ABFECD717 /* Pods_TextRecognition_MLKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD25E93C7AA6569F8B8261F5 /* Pods_TextRecognition_MLKitTests.framework */; };
+		71DA87B922C1A3B8002F6547 /* StaticImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA87B822C1A3B8002F6547 /* StaticImageViewController.swift */; };
+		71EF2DBF22C1AF5B009391C8 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EF2DBE22C1AF5B009391C8 /* TextViewController.swift */; };
 		B74FABF178A48FFE3103E75B /* Pods_TextRecognition_MLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53519EFE435050BBE175DBB9 /* Pods_TextRecognition_MLKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +38,7 @@
 		53519EFE435050BBE175DBB9 /* Pods_TextRecognition_MLKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognition_MLKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55042E99221DC83C00E8381A /* TextRecognition-MLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TextRecognition-MLKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55042E9C221DC83C00E8381A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55042E9E221DC83C00E8381A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55042E9E221DC83C00E8381A /* MainVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVideoViewController.swift; sourceTree = "<group>"; };
 		55042EA1221DC83C00E8381A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55042EA3221DC83D00E8381A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55042EA6221DC83D00E8381A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		55042EBF221DCA4600E8381A /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		55042EC0221DCA4600E8381A /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		5EE84454D386B6D214E8651E /* Pods-TextRecognition-MLKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognition-MLKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognition-MLKitTests/Pods-TextRecognition-MLKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		71DA87B822C1A3B8002F6547 /* StaticImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticImageViewController.swift; sourceTree = "<group>"; };
+		71EF2DBE22C1AF5B009391C8 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		A4AE46A7F6CD8531E5B19028 /* Pods-TextRecognition-MLKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognition-MLKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognition-MLKitTests/Pods-TextRecognition-MLKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD25E93C7AA6569F8B8261F5 /* Pods_TextRecognition_MLKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognition_MLKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1110CE3CC0BF9126318558 /* Pods-TextRecognition-MLKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognition-MLKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognition-MLKit/Pods-TextRecognition-MLKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				55042E9C221DC83C00E8381A /* AppDelegate.swift */,
-				55042E9E221DC83C00E8381A /* ViewController.swift */,
+				55042E9E221DC83C00E8381A /* MainVideoViewController.swift */,
+				71DA87B822C1A3B8002F6547 /* StaticImageViewController.swift */,
+				71EF2DBE22C1AF5B009391C8 /* TextViewController.swift */,
 				55042EC0221DCA4600E8381A /* DrawingView.swift */,
 				55042EBE221DCA4600E8381A /* Measure.swift */,
 				55042EBF221DCA4600E8381A /* VideoCapture.swift */,
@@ -348,9 +354,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				55042EC2221DCA4600E8381A /* VideoCapture.swift in Sources */,
-				55042E9F221DC83C00E8381A /* ViewController.swift in Sources */,
+				55042E9F221DC83C00E8381A /* MainVideoViewController.swift in Sources */,
 				55042EC3221DCA4600E8381A /* DrawingView.swift in Sources */,
 				55042E9D221DC83C00E8381A /* AppDelegate.swift in Sources */,
+				71DA87B922C1A3B8002F6547 /* StaticImageViewController.swift in Sources */,
+				71EF2DBF22C1AF5B009391C8 /* TextViewController.swift in Sources */,
 				55042EC1221DCA4600E8381A /* Measure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

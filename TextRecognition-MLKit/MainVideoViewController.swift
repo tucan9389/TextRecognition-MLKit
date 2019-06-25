@@ -11,7 +11,7 @@ import CoreMedia
 import CoreImage
 import Firebase
 
-class ViewController: UIViewController {
+class MainVideoViewController: UIViewController {
 
     // MARK: - UI Properties
     @IBOutlet weak var videoPreview: UIView!
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: - VideoCaptureDelegate
-extension ViewController: VideoCaptureDelegate {
+extension MainVideoViewController: VideoCaptureDelegate {
     func videoCapture(_ capture: VideoCapture, didCaptureVideoFrame pixelBuffer: CVPixelBuffer?, timestamp: CMTime) {
         // the captured image from camera is contained on pixelBuffer
         if !self.isInference, let pixelBuffer = pixelBuffer {
@@ -103,7 +103,7 @@ extension ViewController: VideoCaptureDelegate {
     }
 }
 
-extension ViewController {
+extension MainVideoViewController {
     func predictUsingVision(pixelBuffer: CVPixelBuffer) {
         let ciimage: CIImage = CIImage(cvImageBuffer: pixelBuffer)
         // crop found word
@@ -148,7 +148,7 @@ extension ViewController {
 }
 
 // MARK: - 📏(Performance Measurement) Delegate
-extension ViewController: 📏Delegate {
+extension MainVideoViewController: 📏Delegate {
     func updateMeasure(inferenceTime: Double, executionTime: Double, fps: Int) {
         //print(executionTime, fps)
         self.inferenceLabel.text = "inference: \(Int(inferenceTime*1000.0)) mm"
