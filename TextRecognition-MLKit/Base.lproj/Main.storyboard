@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Live Video-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVideoViewController" customModule="TextRecognition_MLKit" customModuleProvider="target" sceneMemberID="viewController">
@@ -106,7 +106,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1dD-6g-7FO"/>
+                    <tabBarItem key="tabBarItem" title="Live Video" id="1dD-6g-7FO"/>
                     <connections>
                         <outlet property="drawingView" destination="S2t-dX-9pt" id="SG7-MQ-PpD"/>
                         <outlet property="etimeLabel" destination="eZ2-j2-9TG" id="2qd-N7-9gt"/>
@@ -241,11 +241,11 @@
             </objects>
             <point key="canvasLocation" x="265" y="454"/>
         </scene>
-        <!--Item-->
+        <!--Photo Library-->
         <scene sceneID="O5H-nK-y0Y">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3kk-NQ-SJY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Vjt-ga-apb"/>
+                    <tabBarItem key="tabBarItem" title="Photo Library" id="Vjt-ga-apb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vl7-cU-7Ip">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
